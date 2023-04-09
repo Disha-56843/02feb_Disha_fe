@@ -6,6 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>htmlAssignment</title>
+    <style>
+        .Q7 table, th, td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        .Q10 table, th ,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -33,12 +44,226 @@
     <h4>Q: 3 What are void elements in HTML?</h4>
     <h4>Ans.</h4>
     <p>A void element  is an element in HTML that doesn't have a closing tag. It is marked up by a start tag only. Void elements are used to represent elements that have no content and they cannot have any child elements. Void elements can have attributes. They are self-contained, and they don't require any additional information to be rendered correctly.Void elements in HTML are a special category of elements that are defined as having no content and no closing tag.  </p>
-    For Example: < img> tag, < meta> tag
+    <b>For Example:</b> < img> tag, < meta> tag
     <hr>
 
     <h4>Q: 4 What are HTML Entities?</h4>
     <h4>Ans.</h4>
-    
+    <p>HTML character entities are used as a replacement of reserved characters in HTML. You can also replace characters that are not present on your keyboard by entities.</p>
+    <p>HTML entities provide a wide range of characters which can allow you to add icons, geometric shapes, mathematical operators, etc.</p>
+    <b>For example:</b> if you use less than (<) or greater than (>) symbols in your text, the browser can mix them with tags that's why character entities are used in HTML to display reserved characters. <br><br>
+    <b> Syntax: </b>
+    &entity_name;  
+    <b> OR </b> 
+    &#entity_number;  <br><br>
+    <b> Note:</b> Entity names are case sensitive.
+    <hr>
+
+    <h4>Q: 5 What are different types of lists in HTML?</h4>
+    <h4>Ans.</h4>
+    <b>There are Four list types in HTML:</b>
+    <ol>
+        <li> Unordered list -- used to group a set of related items in no particular order</li>
+        <li> Ordered list -- used to group a set of related items in a specific order</li>
+        <li> Description list -- used to display name/value pairs such as terms and definitions</li>
+        <li> Nested list -- used to an individual list item can contain another entire list</li>
+    </ol>
+    <b>For Example:</b>
+        <ol>
+            <li>
+                <dl>
+                    <dt>Unordered list:</dt>
+                    <dd>
+                        <ul>
+                            <li>A</li>
+                            <li>B</li>
+                            <li>C</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>Ordered list:</dt>
+                    <dd>
+                        <ol>
+                            <li>A</li>
+                            <li>B</li>
+                            <li>C</li>
+                        </ol>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>Discription list:</dt>
+                    <dd>
+                        This is discription list.
+                    </dd>
+                </dl>
+            </li>
+        </ol>
+        <hr>
+
+        
+        <h4>Q:6 What is the 'class' attribute in HTML?</h4>
+        <h4>Ans.</h4>
+        <p>The HTML class attribute is used to specify a single or multiple class names for an HTML element.You can use this class in CSS with a specific class, write a (.) character, followed by the name of the class for selecting elements.</p>
+        <p>A class attribute can be defined within < start> tag or in separate file using the (.) character.</p>
+        <p>In an HTML document, we can use the same class attribute name with different elements.</p>
+        <b>For Example:</b>
+        < div class="abc"> content < /div>
+        <hr>
+        
+        <h4>Q:7 What is the difference between the 'id' attribute and the 'class' attribute of HTML elements?</h4>
+        <h4>Ans.</h4>
+        <h3>What is ID in HTML? :</h3>
+        <p>In HTML, the "id" is used id attribute of an element. For an HTML element, the "id" name starts with the symbol '#' followed by a unique name.The ID is always unique within an HTML page.</p>
+        <h3>What is CLASS in HTML? :</h3>
+        <p>In HTML, the "class" is used to select an element with a specific class attribute. The class starts with a period (.) followed by a class name.</p>
+        <div class="Q7">
+        <table>
+            <caption>Difference between Id and Class </caption>
+            <thead>
+                <tr>
+                    <th>    </th>
+                    <th>Id</th>
+                    <th>Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Syntax</td>
+                    <td>In HTML, for an element, the ID name starts with the "#" symbol followed by a unique name assigned to it.
+                    </td>
+                    <td>"class" assigned to an element has its name starts with "." followed by class name.</td>
+                </tr>
+                <tr>
+                    <td>Uniqueness</td>
+                    <td>ID is unique in a page and can only apply to at most one element</td>
+                    <td>The class can be applied to multiple elements so it could be multiple times on a single page.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+    <hr>
+
+        <h4>Q:8  What are the various formatting tags in HTML?</h4>
+        <h4>Ans.</h4>
+        <p>HTML Formatting is a process of formatting text for better look and feel. HTML provides us ability to format text without using CSS. There are many formatting tags in HTML. These tags are used to make text bold, italic, or underlined. There are almost 14 options available that how text appears in HTML.</p>
+        <b>In HTML the formatting tags are divided into two categories:</b>
+        <ol>
+            <li>Physical tag: These tags are used to provide the visual appearance to the text.</li>
+            <li>Logical tag: These tags are used to add some logical or semantic value to the text.</li>
+        </ol>
+        <ol>
+            <li><b>Bold tag</b></li>
+            <li><strong>Strong tag</strong></li>
+            <li><i>Italic tag</i></li>
+            <li><em>Emphsize tag</em></li>
+            <li><mark>Mark tag</mark></li>
+            <li><u>Underline tag</u></li>
+            <li><ins>Insert tag</ins></li>
+            <li><del>Delet tag</del></li>
+            <li><strike>Strike tag</strike></li>
+            <li><sub>Subscript tag</sub></li>
+            <li><sup>Superscript tag</sup></li>
+            <li><large>Large tag</large></li>
+            <li><small>Small tag</small></li>
+        </ol>
+        <hr>
+
+        <h4>Q:9 How is Cell Padding different from Cell Spacing?</h4>
+        <h4>Ans.</h4>
+        <b>Cellspacing :</b>
+        Cellspacing specifies the space between cells (i.e) it defines the whitespace between the edges of the adjacent cells. <br><br>
+        <b>Cellpadding :</b>
+        Cellpadding specifies the space between the border of a table cell and its contents (i.e) it defines the whitespace between the cell  edge and the content of the cell.
+        <hr>
+
+        <div class="Q10">
+
+            <h4>Q:10 How can we club two or more rows or columns into a single row or column in an HTML table?</h4>
+            <h4>Ans.</h4>
+            <p>You can merge two or more table cells in a column using the colspan attribute in a <td> HTML tag (table data). To merge two or more row cells, use the rowspan attribute.</p>
+                <b>How to use colspan attribute :</b>
+        <p>If we wanted to combine the first two cells in the first column, we could use the colspan="2" attribute in the first <td> tag. The number represents how many cells to use (merge) for the <td> tag, the first cell spans the width of two columns.</p>
+        <b>How to use rowspan attribute :</b>
+        <p>If we wanted to combine the first two cells in the first column into one cell, we could use the rowspan="2" attribute in the first <td> tag. The number represents how many cells to use for the <td> tag, the first cell spans the height of two rows.</p>
+        <b>For Example:</b>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Day/Period</th>
+                    <th>I</th>
+                    <th>II</th>
+                    <th>III</th>
+                    <th rowspan="2">12:00-12:40</th>
+                    <th>IV</th>
+                    <th>V</th>
+                    <th>VI</th>
+                    <th>VII</th>
+                </tr>
+                <tr>
+                    <th>9:30-10:20</th>
+                    <th>10:20-11:10</th>
+                    <th>11:10-12:00</th>
+                    <th>12:40-1:30</th>
+                    <th>1:30-2:20</th>
+                    <th>2:20-3:10</th>
+                    <th>3:10-4:00</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Eng</td>
+                    <td>Mat</td>
+                    <td>Che</td>
+                    <td rowspan="6">L <br> U <br> N <br> C <br> H</td>
+                    <td colspan="3">LAB</td>
+                    <td>Phy</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td colspan="3">LAB</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td>Mat</td>
+                    <td>SPORTS</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Mat</td>
+                    <td>Phy</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td colspan="3">LIBRARY</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Phy</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td colspan="3">LAB</td>
+                    <td>Mat</td>
+                </tr>
+                
+            </thead>
+        </table>
+    </div>
+    <hr>
+
+            <h4>Q:11 What is the difference between a block-level element and an inline element?</h4>
+            <h4>Ans.</h4>
+            <b>Block Elements :</b>
+            <p>The elements that begin on a new line are known as block elements. A block element takes up the full width of the content. They always start in a new line and have top and bottom margins. It does not contain any other elements next to it.</p>
+            <b>Inline Elements :</b>
+            <p>Inline elements occupy only enough width that is sufficient to it and allows other elements next to it which are inline. Inline elements don't start from a new line and don't have top and bottom margins as block elements have.</p>
+            <hr>
+
+            <h4>Q:12 How to create a Hyperlink in HTML?</h4>
+            <h4>Ans.</h4>
+            
+
 </body>
 
 </html>
