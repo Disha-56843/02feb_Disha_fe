@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htmlAssignment</title>
+    <style>
+        .Q7 table, th, td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        .Q10 table, th ,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .Q15{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDb9tc3xfXFqkRtp79b6ByaYlVu25GJT8IyUMRCXgh9A&usqp=CAU&ec=48600112);
+            color: #000;
+        }
+        .Q16:hover{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h3>Q:1 Are the HTML tags and elements the same thing?</h3>
+    <h3> Ans.</h3>
+    <h3>HTML Tags:</h3>
+    <p>HTML tags are special keywords surrounded by a pair of angle brackets < tag keyword>. Most tags come in pairs, with an opening and closing tag. The closing tag is the same as an opening tag with the addition of a forward-slash. The closing bold tag looks like this < /b>. Some tags, like the tag used to display an image < img>, do not have a closing version. This is because you do not need to define an opening and closing to display an image, just a location of where the image can be found.
+    </p>
+    <h3>HTML Elements :</h3>
+    <p>HTML elements are individual components of HTML defined by HTML tags. At first glance, elements and tags can easily be mistaken for the same thing. But they are not. The key thing to remember is that elements are made up of tags, but tags are not made up of elements.
+    <h4> Element = start tag + content + end tag </h4>
+    </p>
+    <hr>
+
+    <h3>Q: 2 What are tags and attributes in HTML?</h3>
+    <h3>Ans.</h3>
+    <h3>HTML Tags :</h3>
+    <p>HTML tags are special keywords surrounded by a pair of angle brackets <>. Most tags come in pairs, with an opening and closing tag. The closing tag is the same as an opening tag with the addition of a forward-slash.Some tags, like the tag used to display an image < img>, do not have a closing version.</p>
+    <h3>HTML Attributes :</h3>
+    <p>In simple words, an HTML attribute is what modifies an HTML element. It is usually in the form of unique words that one inserts inside the opening tag. They control the behavior of the element.  Attributes are inside the start tag of that particular element that needs modification.
+    </p>
+    <hr>
+
+    <h3>Q: 3 What are void elements in HTML?</h3>
+    <h3>Ans.</h3>
+    <p>A void element  is an element in HTML that doesn't have a closing tag. It is marked up by a start tag only. Void elements are used to represent elements that have no content and they cannot have any child elements. Void elements can have attributes. They are self-contained, and they don't require any additional information to be rendered correctly.Void elements in HTML are a special category of elements that are defined as having no content and no closing tag.  </p>
+    <b>For Example:</b> < img> tag, < meta> tag
+    <hr>
+
+    <h4>Q: 4 What are HTML Entities?</h4>
+    <h3>Ans.</h3>
+    <p>HTML character entities are used as a replacement of reserved characters in HTML. You can also replace characters that are not present on your keyboard by entities.</p>
+    <p>HTML entities provide a wide range of characters which can allow you to add icons, geometric shapes, mathematical operators, etc.</p>
+    <b>For example:</b> if you use less than (<) or greater than (>) symbols in your text, the browser can mix them with tags that's why character entities are used in HTML to display reserved characters. <br><br>
+    <b> Syntax: </b>
+    &entity_name;  
+    <b> OR </b> 
+    &#entity_number;  <br><br>
+    <b> Note:</b> Entity names are case sensitive.
+    <hr>
+
+    <h3>Q: 5 What are different types of lists in HTML?</h3>
+    <h3>Ans.</h3>
+    <b>There are Four list types in HTML:</b>
+    <ol>
+        <li> Unordered list -- used to group a set of related items in no particular order</li>
+        <li> Ordered list -- used to group a set of related items in a specific order</li>
+        <li> Description list -- used to display name/value pairs such as terms and definitions</li>
+        <li> Nested list -- used to an individual list item can contain another entire list</li>
+    </ol>
+    <b>For Example:</b>
+        <ol>
+            <li>
+                <dl>
+                    <dt>Unordered list:</dt>
+                    <dd>
+                        <ul>
+                            <li>A</li>
+                            <li>B</li>
+                            <li>C</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>Ordered list:</dt>
+                    <dd>
+                        <ol>
+                            <li>A</li>
+                            <li>B</li>
+                            <li>C</li>
+                        </ol>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>Discription list:</dt>
+                    <dd>
+                        This is discription list.
+                    </dd>
+                </dl>
+            </li>
+        </ol>
+        <hr>
+
+        
+        <h3>Q:6 What is the 'class' attribute in HTML?</h3>
+        <h3>Ans.</h3>
+        <p>The HTML class attribute is used to specify a single or multiple class names for an HTML element.You can use this class in CSS with a specific class, write a (.) character, followed by the name of the class for selecting elements.</p>
+        <p>A class attribute can be defined within < start> tag or in separate file using the (.) character.</p>
+        <p>In an HTML document, we can use the same class attribute name with different elements.</p>
+        <b>For Example:</b>
+        < div class="abc"> content < /div>
+        <hr>
+        
+        <h3>Q:7 What is the difference between the 'id' attribute and the 'class' attribute of HTML elements?</h3>
+        <h3>Ans.</h3>
+        <h3>What is ID in HTML? :</h3>
+        <p>In HTML, the "id" is used id attribute of an element. For an HTML element, the "id" name starts with the symbol '#' followed by a unique name.The ID is always unique within an HTML page.</p>
+        <h3>What is CLASS in HTML? :</h3>
+        <p>In HTML, the "class" is used to select an element with a specific class attribute. The class starts with a period (.) followed by a class name.</p>
+        <div class="Q7">
+        <table>
+            <caption>Difference between Id and Class </caption>
+            <thead>
+                <tr>
+                    <th>    </th>
+                    <th>Id</th>
+                    <th>Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Syntax</td>
+                    <td>In HTML, for an element, the ID name starts with the "#" symbol followed by a unique name assigned to it.
+                    </td>
+                    <td>"class" assigned to an element has its name starts with "." followed by class name.</td>
+                </tr>
+                <tr>
+                    <td>Uniqueness</td>
+                    <td>ID is unique in a page and can only apply to at most one element</td>
+                    <td>The class can be applied to multiple elements so it could be multiple times on a single page.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+    <hr>
+
+        <h3>Q:8  What are the various formatting tags in HTML?</h3>
+        <h3>Ans.</h3>
+        <p>HTML Formatting is a process of formatting text for better look and feel. HTML provides us ability to format text without using CSS. There are many formatting tags in HTML. These tags are used to make text bold, italic, or underlined. There are almost 14 options available that how text appears in HTML.</p>
+        <b>In HTML the formatting tags are divided into two categories:</b>
+        <ol>
+            <li>Physical tag: These tags are used to provide the visual appearance to the text.</li>
+            <li>Logical tag: These tags are used to add some logical or semantic value to the text.</li>
+        </ol>
+        <ol>
+            <li><b>Bold tag</b></li>
+            <li><strong>Strong tag</strong></li>
+            <li><i>Italic tag</i></li>
+            <li><em>Emphsize tag</em></li>
+            <li><mark>Mark tag</mark></li>
+            <li><u>Underline tag</u></li>
+            <li><ins>Insert tag</ins></li>
+            <li><del>Delet tag</del></li>
+            <li><strike>Strike tag</strike></li>
+            <li><sub>Subscript tag</sub></li>
+            <li><sup>Superscript tag</sup></li>
+            <li><large>Large tag</large></li>
+            <li><small>Small tag</small></li>
+        </ol>
+        <hr>
+
+        <h3>Q:9 How is Cell Padding different from Cell Spacing?</h3>
+        <h3>Ans.</h3>
+        <b>Cellspacing :</b>
+        Cellspacing specifies the space between cells (i.e) it defines the whitespace between the edges of the adjacent cells. <br><br>
+        <b>Cellpadding :</b>
+        Cellpadding specifies the space between the border of a table cell and its contents (i.e) it defines the whitespace between the cell  edge and the content of the cell.
+        <hr>
+
+        <div class="Q10">
+
+            <h3>Q:10 How can we club two or more rows or columns into a single row or column in an HTML table?</h3>
+            <h3>Ans.</h3>
+            <p>You can merge two or more table cells in a column using the colspan attribute in a <td> HTML tag (table data). To merge two or more row cells, use the rowspan attribute.</p>
+                <b>How to use colspan attribute :</b>
+        <p>If we wanted to combine the first two cells in the first column, we could use the colspan="2" attribute in the first <td> tag. The number represents how many cells to use (merge) for the <td> tag, the first cell spans the width of two columns.</p>
+        <b>How to use rowspan attribute :</b>
+        <p>If we wanted to combine the first two cells in the first column into one cell, we could use the rowspan="2" attribute in the first <td> tag. The number represents how many cells to use for the <td> tag, the first cell spans the height of two rows.</p>
+        <b>For Example:</b>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Day/Period</th>
+                    <th>I</th>
+                    <th>II</th>
+                    <th>III</th>
+                    <th rowspan="2">12:00-12:40</th>
+                    <th>IV</th>
+                    <th>V</th>
+                    <th>VI</th>
+                    <th>VII</th>
+                </tr>
+                <tr>
+                    <th>9:30-10:20</th>
+                    <th>10:20-11:10</th>
+                    <th>11:10-12:00</th>
+                    <th>12:40-1:30</th>
+                    <th>1:30-2:20</th>
+                    <th>2:20-3:10</th>
+                    <th>3:10-4:00</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>Eng</td>
+                    <td>Mat</td>
+                    <td>Che</td>
+                    <td rowspan="6">L <br> U <br> N <br> C <br> H</td>
+                    <td colspan="3">LAB</td>
+                    <td>Phy</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td colspan="3">LAB</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td>Mat</td>
+                    <td>SPORTS</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Mat</td>
+                    <td>Phy</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td colspan="3">LIBRARY</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Phy</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td colspan="3">LAB</td>
+                    <td>Mat</td>
+                </tr>
+                
+            </thead>
+        </table>
+    </div>
+    <hr>
+
+            <h3>Q:11 What is the difference between a block-level element and an inline element?</h3>
+            <h3>Ans.</h3>
+            <b>Block Elements :</b>
+            <p>The elements that begin on a new line are known as block elements. A block element takes up the full width of the content. They always start in a new line and have top and bottom margins. It does not contain any other elements next to it.</p>
+            <b>Inline Elements :</b>
+            <p>Inline elements occupy only enough width that is sufficient to it and allows other elements next to it which are inline. Inline elements don't start from a new line and don't have top and bottom margins as block elements have.</p>
+            <hr>
+
+            <h3>Q:12 How to create a Hyperlink in HTML?</h3>
+            <h3>Ans.</h3>
+            <p>Hyperlinks allow us to link the documents to other documents. Almost any content on the web can be converted to a link that when clicked goes to another webpage.</p>
+            <p>The anchor tag < a>..< /a> is used to define a hyperlink in HTML.</p>
+            <b>Syntax :</b>< a href=""> Text < /a>
+            <p>The href attribute is the most important attribute of the anchor tag as it contains the link to the destination.</p>
+            <p>The Text in the syntax is the text that is visible to the user as a link that when clicked takes the user to the destination webpage.</p>
+            <b>For Example:</b><a href="https://WWW.Google.com">Google</a>
+            <hr>
+
+            <h3>Q:13 What is the use of an iframe tag?</h3>
+            <h3>Ans.</h3>
+            <p>HTML Iframe is used to display a nested webpage (a webpage in a webpage). The HTML < iframe> tag defines an inline frame, it is also called as an Inline frame.An HTML iframe contains another document within the current HTML document in the rectangular place.</p>
+            <b>Syntax:</b>
+            <p>An HTML iframe is defined with the < iframe> tag <br> < iframe src="URL">< /iframe> <br> Here, "src" attribute specifies the web address (URL) of the iframe page. </p>
+            <hr>
+
+            <h3>Q:14 What is the use of a span tag? Explain with example?</h3>
+            <h3>Ans.</h3>
+            <p>The HTML span tag is used for grouping and applying styles to inline elements. There is a difference between the span tag and the div tag. The span tag is used with inline elements whilst the div tag is used with block-level element. </p>
+            <p> Span tags are powerful because they let us assign any global HTML attribute to a section of text or other inline page content. The most common attributes you'll see used with span are the selectors id and class, used to apply styling to specific words.</p>
+            <b>For Example:</b>< span class="A"> < p>Lorem ipsum dolor sit amet.< /p>< /span>
+            <hr>
+
+            <div class="Q15">
+
+                <h3>Q:15 How to insert a picture into a background image of a web page?</h3>
+                <h3>Ans.</h3>
+                <p>If you'd like to set an image as the background of a web page or an HTML element, rather than simply inserting the image onto the page, you'll need to use the CSS background-image property.</p>
+                <p>To set the value of background-image, you have to use : <b> url(' ')</b>;</p>
+                <p> You can define the background-image property in the head section of your HTML file or in an external stylesheet.</p>
+            </div>
+            <hr>
+
+            <h3>Q:16 How are active links different from normal links?</h3>
+            <h3>Ans.</h3>
+            <b>Normal link:</b>
+            <p>Normal link is link which is unvisited appear in any browser.</p>
+            <b>For Example:</b><a href="https://www.google.com">Google</a>
+            <b>Active link:</b>
+            <p>Active link is link which is process of visited link. When click on normal link and open any link  in between taken time and process is active link. </p>
+            <b>For Example:</b>
+            <p>If you right click this given link it's color will change into red:</p>
+            <a class="Q16" href="https://www.amazon.in">Amazon</a>
+            <hr>
+
+            <h3>Q:17  What are the different tags to separate sections of text?</h3>
+            <h3>Ans.</h3>
+            <p>There are three tags used to separate the text. Usually <br> tag is used to separate line of texts.</p>
+            <b> Break(br) Tag :</b>
+            <p>The br tag in HTML document is used to create a line break in a text.It is an empty tag, which means it does not have end tag. If you place the <br> tag in the HTML code, then it works the same as pressing the enter key in a word processor.</p>
+            <hr>
+
+            <h3>Q:18 What is SVG?</h3>
+            <h3>Ans.</h3>
+            <p>A Scalable Vector Graphic (SVG) is a unique type of image format. Unlike other varieties, SVGs don't rely on unique pixels to make up the images you see. Instead, they use 'vector' data.</p>
+            <hr>
+
+            <h3>Q:19 What is difference between HTML and XHTML?</h3>
+            <h3>Ans.</h3>
+            <b>HTML:</b>
+            <ol>
+                <li>HTML stands for Hypertext Markup Language</li>
+                <li>HTML is not a case-sensitive language.</li>
+                <li>HTML empty elements do not require a closing tag at the end, not even a "/" symbol to signify the end of the tag.</li>
+                <li> The HTML document requires a minimum of four tags to create an HTML page that is < html>, < head>, < title>, and < body>. The <!DOCTYPE> declaration is not necessary for HTML.</li>
+            </ol>
+            <b>XHTML:</b>
+            <ol>
+                <li>XHTML stands for Extensible Hypertext Markup Language.</li>
+                <li>XHTML is a case-sensitive language.</li>
+                <li>XHTML empty elements must always be closed; that is, there must be a "/" symbol at the end of the empty element.</li>
+                <li> An XHTML document must contain the <!DOCTYPE> declaration followed by the < html>, < head>, < title>, and < body> tags in its document to create a webpage. Moreover, the xmlns attribute in < html> tag is also necessary.</li>
+            </ol>
+            <hr>
+
+            <h3>Q:20 What are logical and physical tags in HTML?</h3>
+            <h3>Ans.</h3>
+            <b>Logical Tags  :</b>
+            <p>Logical Tags are used in HTML to display the text according to the logical styles. Following are the Logical tags commonly used in HTML.Logical tags are now often referred to as semantic tags</p>
+            <b>For Example:</b>
+            <ol>
+                <li> < header>< /header> - Header tag</li>
+                <li> < address>< /address> - Address tag</li>
+            </ol>
+            <b>Physical Tags </b>
+            <p>Physical Tags are used in HTML to provide actual physical formatting to the text. Following are the Physical tags commonly used in HTML.</p>
+            <b>For Example:</b>
+            <ol>
+                <li> < b>< /b> - Bold tag </li>
+                <li> < i>< /i> - Italic tag</li>
+            </ol>
+
+</body>
+
+</html>
