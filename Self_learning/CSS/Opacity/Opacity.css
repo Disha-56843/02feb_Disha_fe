@@ -1,0 +1,8 @@
+div{
+    height: 500px;
+    width: 40%;
+    background-color: blueviolet;
+    opacity: 0.8;
+    color: #fff;
+    border: 3px solid black;
+}
