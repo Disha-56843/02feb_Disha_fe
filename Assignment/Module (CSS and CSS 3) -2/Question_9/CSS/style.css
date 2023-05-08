@@ -1,0 +1,35 @@
+h3{
+    background-color: cadetblue;
+    color: #fff;
+    display: inline-block;
+    font-size: x-large;
+    padding: 3px;
+    border-radius: 15px;
+}
+hr{
+    border-top: #000 solid;
+}
+b{
+    font-size: large;
+}
+.attachment {
+    height: 250px;
+    width: 400px;
+    border: solid #666;
+    margin: 3px;
+    background-image: url(../Image/Question9.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.scroll {
+    background-attachment: scroll;
+}
+
+.fixed {
+    background-attachment: fixed;
+}
+
+.local {
+    background-attachment: local;
+}

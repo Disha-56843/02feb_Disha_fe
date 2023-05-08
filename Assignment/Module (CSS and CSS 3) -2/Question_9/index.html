@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Question_9/CSS/style.css" type="text/css">
+    <title>Question:9</title>
+</head>
+<body>
+    <h3>Q:9 Which property controls the image scroll in the background?</h3><br>
+    <h3>Ans.</h3>
+    <li>The background-attachment property is used to specify that the background image is fixed or scroll. </li>
+    <li>This property has three values scroll, fixed, and local. Its default value is scroll.</li><br><br>
+    <b>Syntax:</b>
+    background-attachment: scroll/fixed/local <br><br>
+    <b>For Example:</b><br><br>
+
+    <b>Backgroud-attachment scroll:</b><br><br>
+    <div class="attachment scroll"></div><br>
+    <li>If we apply scroll value in background-attachment property backgroud-image will be scroll with the page.</li>
+    <br>
+    <b>CSS Code:</b><br><br>
+    .scroll{ <br>
+    height: 250px; <br>
+    width: 450px; <br>
+    border: solid #666; <br>
+    margin: 3px; <br>
+    background-image:
+    url(../Image/Question9.jpg);
+    <br>
+    background-size:100% 100%; <br>
+    background-repeat: no-repeat; <br>
+    background-attachment: scroll;<br>
+    } <br><br>
+    <b>Backgroud-attachment fixed:</b><br><br>
+    <div class="attachment fixed"></div><br>
+    <li>If we apply fixed value in background-attachment property backgroud-image will not scroll with the page, will
+        get fixed in the backgroud.</li> <br>
+    <b>CSS Code:</b><br><br>
+    .fixed{ <br>
+    height: 250px; <br>
+    width: 450px; <br>
+    border: solid #666; <br>
+    margin: 3px; <br>
+    background-image:
+    url(../Image/Question9.jpg);
+    <br>
+    background-size:100% 100%; <br>
+    background-repeat: no-repeat; <br>
+    background-attachment: scroll; <br>
+    } <br><br>
+    <b>Backgroud-attachment local:</b><br><br>
+    <div class="attachment local"></div><br>
+    <li>If we apply local value in background-attachment property backgroud-image will be scroll with element content.
+    </li> <br>
+    <b>CSS Code:</b><br><br>
+    .local{ <br>
+    height: 250px; <br>
+    width: 450px; <br>
+    border: solid #666; <br>
+    margin: 3px; <br>
+    background-image:
+    url(../Image/Question9.jpg);
+    <br>
+    background-size:100% 100%; <br>
+    background-repeat: no-repeat; <br>
+    background-attachment: scroll; <br>
+    } <br><br>
+    <hr>
+</body>
+</html>

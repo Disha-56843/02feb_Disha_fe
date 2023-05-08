@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Question_12/CSS/style.css" type="text/css">
+    <title>Question:12</title>
+</head>
+
+<body>
+    <h3>Q:12 How to maintain the CSS specifications?</h3><br>
+    <h3>Ans.</h3>
+    <li>If two rules are applied to the same element, the one that comes last is the one that will be used, and its
+        style will be applied to that HTML element.</li><br>
+    <li> If two CSS selectors apply to the same element, the one with higher specificity is used.</li>
+    <b>For Example:</b><br><br>
+    <!-- Example:1 -->
+    <b>Ex.1</b> We'll apply two classes to an element and give each class a different background-color. <br><br>
+    <b>HTML Code:</b><br><br>
+    &lt;p class="style1 style2"&gt; This is a test paragraph&lt;/p&gt; <br><br>
+    <b>CSS Code:</b><br><br>
+    .style2{<br>
+    &emsp;&emsp;&emsp; background-color: red;<br>
+    &emsp;&emsp;&emsp; } <br>
+
+    .style1{ <br>
+    &emsp;&emsp;&emsp;background-color: yellow; <br>
+    &emsp;&emsp;&emsp;} <br>
+
+    <p class="style1 style2" style="border: 1px solid black"> This is a test paragraph</p>
+    <h4> The style1 which comes last in the stylesheet is applied to the element.</h4>
+    <!-- Example:2 -->
+    <b>Ex.2</b>We'll apply one Class and one Id to an element and give a different background-color. <br><br>
+    <b>HTML Code:</b><br><br>
+    &lt;p class="example2" id="paragraph"&gt; This is a test paragraph&lt;/p&gt; <br><br>
+    <b>CSS Code:</b><br><br>
+    #paragraph{<br>
+    &emsp;&emsp;&emsp;background-color: red; <br>
+    &emsp;&emsp;&emsp;} <br>
+
+    .example2{ <br>
+    &emsp;&emsp;&emsp; background-color: yellow; <br>
+    &emsp;&emsp;&emsp;} <br>
+
+    <p class="style1" id="paragraph" style="border: 1px solid black"> This is a test paragraph</p>
+
+    <h4>The #paragraph is an id selector, while the .example2 is a class selector.The property value of the id
+        selector was applied because it has a higher specificity value.</h4>
+    <!-- Example:3 -->
+    <b>Ex.3</b> if we have an element and for the same property color, there's an inline style. <br><br>
+    <b>HTML Code:</b><br><br>
+    &lt;p style="color: red" class="yellow" id="paragraph"&gt;This is a paragraph&lt;/p&gt;
+    <b>CSS Code:</b><br><br>
+    #paragraph1{ <br>
+    &emsp;&emsp;&emsp; color: green;<br>
+    &emsp;&emsp;&emsp; } <br>
+
+    .yellow{ <br>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; color: yellow; <br>
+    &emsp;&emsp;&emsp;} <br>
+
+
+    <p style="color: red; background-color: transparent; border: 1px solid black;" class="yellow" id="paragraph">
+        This is a paragraph</p>
+
+    <h4>If the class and id selectors also have values for the same property, the inline style wins because it has a
+        higher specificity value.</h4>
+
+    <b style="color: red; ">Note:</b> The weights only apply when different selectors have values for the same
+    property. <br><br>
+    <!-- Example:4 -->
+    <div class="example4">
+
+        <b>Ex.4 </b> if we have an element and for the same property color, there's an inline style. <br><br> <b>
+            <li>Applying !important to the property value of any selector makes it the value that will be applied to
+                the element. </li>
+        </b> <br>
+
+        <b>HTML Code:</b><br><br>
+
+        &lt;p class="blue" id="paragraph" style="color: green"&gt; This is a paragraph &lt;/p&gt;
+
+        <b>CSS Code:</b><br><br>
+
+        p{ <br>
+        &emsp; color: red !important; <br>
+        &emsp;} <br>
+        .blue{ <br>
+        &emsp;&emsp;&emsp;color: blue; <br>
+        &emsp;&emsp;&emsp;} <br>
+
+        #paragraph{ <br>
+        &emsp;&emsp;&emsp; color: purple; <br>
+        &emsp;&emsp;&emsp;} <br>
+
+        <p class="blue" id="paragraph" style="color: green; border: 1px solid black;"> This is a paragraph </p>
+
+        <h4>That's why !important should be avoided because it makes it difficult override a style.</h4>
+    </div>
+
+
+    <hr>
+</body>
+
+</html>

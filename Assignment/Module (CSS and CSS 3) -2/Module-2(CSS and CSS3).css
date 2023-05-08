@@ -1,7 +1,7 @@
 h1{
     text-align: center;
 }
-h3 {
+h3{
     background-color: cadetblue;
     color: #fff;
     display: inline-block;
@@ -9,17 +9,16 @@ h3 {
     padding: 3px;
     border-radius: 15px;
 }
-
-hr {
+hr{
     border-top: #000 solid;
 }
 
-h4 {
+h4{
     text-decoration: underline;
     font-size: larger;
 }
 
-b {
+b{
     font-size: large;
 }
 

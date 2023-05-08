@@ -1,0 +1,25 @@
+h3{
+    background-color: cadetblue;
+    color: #fff;
+    display: inline-block;
+    font-size: x-large;
+    padding: 3px;
+    border-radius: 15px;
+}
+hr{
+    border-top: #000 solid;
+}
+b{
+    font-size: large;
+}
+.external {
+    height: 30px;
+    width: 150px;
+    background-color: cadetblue;
+}
+
+.internal {
+    height: 30px;
+    width: 150px;
+    background-color: crimson;
+}

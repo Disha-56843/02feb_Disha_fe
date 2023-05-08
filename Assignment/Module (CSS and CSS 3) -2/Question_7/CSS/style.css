@@ -1,0 +1,40 @@
+h3{
+    background-color: cadetblue;
+    color: #fff;
+    display: inline-block;
+    font-size: x-large;
+    padding: 3px;
+    border-radius: 15px;
+}
+hr{
+    border-top: #000 solid;
+}
+b{
+    font-size: large;
+}
+.repet {
+    height: 350px;
+    width: 480px;
+    margin: 20px;
+    background-image: url(../Image/Question7.webp);
+    border: solid #666;
+    border-radius: 15px;
+    background-color: cadetblue;
+    background-size: 250px;
+}
+
+.repeat {
+    background-repeat: repeat;
+}
+
+.repeat-x {
+    background-repeat: repeat-x;
+}
+
+.repeat-y {
+    background-repeat: repeat-y;
+}
+
+.no-repeat {
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,28 @@
+h3{
+    background-color: cadetblue;
+    color: #fff;
+    display: inline-block;
+    font-size: x-large;
+    padding: 3px;
+    border-radius: 15px;
+}
+hr{
+    border-top: #000 solid;
+}
+b{
+    font-size: large;
+}
+h1 {
+    color: green;
+}
+
+/* Selector */
+p:first-child {
+
+    background-color: green;
+    color: white;
+    font-size: 15px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}

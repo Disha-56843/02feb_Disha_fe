@@ -1,0 +1,56 @@
+h3{
+    background-color: cadetblue;
+    color: #fff;
+    display: inline-block;
+    font-size: x-large;
+    padding: 3px;
+    border-radius: 15px;
+}
+hr{
+    border-top: #000 solid;
+}
+
+h4{
+    text-decoration: underline;
+    font-size: larger;
+}
+
+b{
+    font-size: large;
+}
+.style2 {
+    background-color: red;
+}
+
+.style1 {
+    background-color: yellow;
+}
+
+#paragraph {
+    background-color: red;
+}
+
+.example2 {
+    background-color: yellow;
+}
+
+#paragraph1 {
+    color: green;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.example4 p {
+    color: red !important;
+    background-color: transparent !important;
+}
+
+.example4 .blue {
+    color: blue;
+}
+
+.example4 #paragraph {
+    color: purple;
+}

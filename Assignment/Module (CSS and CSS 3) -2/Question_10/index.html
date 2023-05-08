@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Question_10/CSS/style.css" type="text/css">
+    <title>Question:10</title>
+</head>
+
+<body>
+    <h3>Q:10 Why should background and color be used as separate properties?</h3><br>
+    <h3>Ans.</h3>
+    <h4>Introduction:</h4>
+    <ol>
+        <li>
+            <dl>
+                <dt><b>Background-color:</b></dt><br>
+                <dd>We use background-color property when we wank change color of background.
+                    We can also change background-color using backgroud property.</dd><br>
+                <dd><b>For Example:</b></dd>
+                <dd>
+                    <div class="background-color"></div>
+                </dd><br><br>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt><b>Color:</b></dt><br>
+                <dd>we use color property when we want to change color of text in any element.</dd><br>
+                <dd><b>For Example:</b></dd>
+                <dd>
+                    <div class="color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni inventore fugiat
+                        reiciendis quam quidem. Reprehenderit tempora libero illum. Explicabo commodi autem dolores
+                        repellendus voluptatum harum sint facilis eveniet sequi soluta.</div>
+                </dd><br><br>
+
+                <dd>From above example we can see that we can change color of text using color property.</dd><br>
+                <dd><b>CSS Code:</b></dd>
+                <dd>.color{<br>
+                    height: 200px;<br>
+                    width: 300px;<br>
+                    background-color:darkcyan;<br>
+                    color: #fff;<br>
+                    }</dd>
+
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt><b>Backgroud:</b></dt><br>
+                <dd>We can use backgroud property when we want to make any changes to backgroud of any element. Using
+                    backgroud property includes many properties like backgroud-image, background-color, background-size,
+                    background-attachment, background-repeat,backgroud-position etc.</dd><br>
+                <dd><b>For Example:</b></dd>
+                <dd>
+                    <div class="background"></div>
+                </dd><br>
+                <dd>From above example we can see that we can change anything in backgroud without using any particular
+                    property by only using backgroud property. </dd><br>
+                <dd><b>CSS Code:</b></dd>
+                <dd>.background{<br>
+                    height: 200px;<br>
+                    width: 300px;<br>
+                    background:
+                    url(../Image/Question10.jpg)
+                    ;<br>
+                    }</dd>
+
+            </dl>
+        </li>
+    </ol>
+    <div class="list">
+        <h4>We can define the color of an element by using the following ways:</h4>
+        <ul>
+            <li>RGB format:</li>
+            RGB format is the short form of 'RED GREEN and BLUE' that is used for defining the color of an HTML element
+            <br>
+            <b>Syntax:</b>color: rgb(R, G, B);
+            <li>RGBA format:</li>
+            It is almost similar to RGB format except that RGBA contains A (Alpha) that specifies the element's
+            transparency. The value of alpha is in the range 0 to 1, in which 0 is for fully transparent, and 1 is for
+            not
+            transparent. <br>
+            <b>Syntax:</b>color:rgba(R, G, B, A);
+            <li>Hexadecimal notation:</li>
+            Hexadecimal can be defined as a six-digit color representation. This notation starts with the # symbol
+            followed
+            by six characters ranges from 0 to F. In hexadecimal notation, the first two digits represent the red (RR)
+            color
+            value, the next two digits represent the green (GG) color value, and the last two digits represent the blue
+            (BB)
+            color value. <br>
+            <b>Syntax:</b>color:#(0-F)(0-F)(0-F)(0-F)(0-F)(0-F);
+            <li>HSL:</li>
+            It is a short form of Hue, Saturation, and Lightness.
+            Hue: It can be defined as the degree on the color wheel from 0 to 360. 0 represents red, 120 represents
+            green,
+            240 represents blue.
+            Saturation: It takes value in percentage in which 100% represents fully saturated.
+            Lightness: The lightness of the color can be defined as the light that we want to provide the color in which
+            0%
+            represents black (there is no light), 50% represents neither dark nor light, and 100% represents white (full
+            lightness). <br>
+            <b>Syntax:</b>color:hsl(H, S, L);
+            <li>HSLA:</li>
+            It is similar to HSL property, except that it contains A (alpha) that specifies the element's transparency.
+            <br>
+            <b>Syntax:</b> color:hsla(H, S, L, A);
+            <li>Built-in color:</li>
+            As its name implies, built-in color means the collection of previously defined colors that are used by using
+            a
+            name such as red, blue, green, etc. <br>
+        </ul>
+    </div>
+    <!-- Example -->
+
+    <h4>For Example:</h4>
+    <h1 id="rgb">
+        This is RGB format.
+    </h1>
+    <h1 id="rgba">
+        This is RGBA format.
+    </h1>
+    <h1 id="hex">
+        This is Hexadecimal format.
+    </h1>
+    <h1 id="short">
+        This is Short-hexadecimal format.
+    </h1>
+    <h1 id="hsl">
+        This is HSL format.
+    </h1>
+    <h1 id="hsla">
+        This is HSLA format.
+    </h1>
+    <h1 id="built">
+        This is Built-in color format.
+    </h1>
+    </ul>
+
+    <hr>
+</body>
+
+</html>

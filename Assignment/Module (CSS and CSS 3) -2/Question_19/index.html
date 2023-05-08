@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Question:19</title>
+</head>
+<body>
+    <h3>Q:19 What is the rule set?</h3><br>
+    <h3>Ans.</h3>
+
+        <li>A rule or "rule set" is a statement that tells browsers how to provide particular elements on an HTML page. A rule set include selectors.</li>
+        <li>The "." in the beginning show that the rule created will be a class, also "container" show the name of the selector.Similarly “first-child” indicates the pseudo-class.</li>
+        <li>Elements inside curly brackets contains some CSS properties and their values</li><br>
+
+        <b>Example:</b><br>
+        The class name is used to give property and its corresponding values. The :first-child selector is used to selecting those elements which are the first-child elements as applied below for the HTML "p" element. <br><br>
+
+
+        <b>HTML Code:</b><br><br>
+
+        &lt;div&gt; <br>
+        &emsp;&emsp; &lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, a!&lt;/p&gt; <br>
+
+        &emsp;&emsp;&lt;h1&gt;This is h1 tag&lt;/h1&gt;<br>
+        &emsp;&emsp;&lt;h2&gt;This is h2 tag&lt;/h2&gt;<br>
+        &emsp;&emsp;&lt;p&gt;This is p tag&lt;/p&gt; <br><br>
+
+        &lt;/div&gt; <br><br>
+
+        <b>CSS Code:</b><br><br>
+
+        h1 {<br>
+        &emsp; color: green;<br>
+        &emsp;} <br><br>
+        <!-- Selector  -->
+        p:first-child{ <br>
+
+        &emsp;&emsp;&emsp; background-color: green;<br>
+        &emsp;&emsp;&emsp; color: white; <br>
+        &emsp;&emsp;&emsp; font-size: 15px;<br>
+        &emsp;&emsp;&emsp; border-radius: 50px; <br>
+        &emsp;&emsp;&emsp; text-transform: uppercase; <br>
+        &emsp;&emsp;&emsp; font-weight: bold; <br>
+        &emsp;&emsp;&emsp;} <br><br>
+
+        body { <br>
+        &emsp;&emsp;&emsp; text-align: center; <br>
+        &emsp;&emsp;&emsp;} <br><br>
+
+
+
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, a!</p>
+
+            <h1>This is h1 tag</h1>
+            <h2>This is h2 tag</h2>
+
+            <p>This is p tag</p>
+
+        </div>
+
+    <hr>
+</body>
+</html>

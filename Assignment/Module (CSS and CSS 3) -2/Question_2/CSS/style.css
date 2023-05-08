@@ -1,0 +1,21 @@
+h3 {
+    background-color: cadetblue;
+    color: #fff;
+    display: inline-block;
+    font-size: x-large;
+    padding: 3px;
+    border-radius: 15px;
+}
+
+hr {
+    border-top: #000 solid;
+}
+
+h4 {
+    text-decoration: underline;
+    font-size: larger;
+}
+
+b {
+    font-size: large;
+}
