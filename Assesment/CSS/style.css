@@ -1,0 +1,119 @@
+*{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+    text-decoration: underline brown;
+    color: brown;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(242, 240, 240);
+}
+form{
+    width: 100%;
+}
+.part1{
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 150px 300px;
+    padding: 10px 300px 10px 5px;
+    font-size: medium;
+    border-radius: 4px;
+}
+.part2{
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 150px 300px;
+    font-size: medium;
+    border-radius: 4px;
+}
+.part3{
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 150px 300px;
+    font-size: medium;
+    border-radius: 4px;
+}
+.part4{
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 150px 300px;
+    font-size: medium;
+    border-radius: 4px;
+}
+.part5{
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 150px 300px;
+    font-size: medium;
+    border-radius: 4px;
+}
+.part6{
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 150px 300px;
+    border-radius: 4px;
+}
+.part7{
+    display: grid;
+    grid-template-rows: 110px;
+    grid-template-columns: 150px 300px;
+    font-size: medium;
+    border-radius: 4px;
+}
+.part8{
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 150px 300px;
+    font-size: medium;
+    border-radius: 4px;
+}
+.part9{
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 150px 300px;
+    font-size: medium;
+    border-radius: 4px;
+}
+.part10{
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 150px 300px;
+    font-size: medium;
+    border-radius: 4px;
+}
+.part11{
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 150px 300px;
+}
+#cs{
+    margin-left: 150px;
+}
+#it{
+    margin-left: 150px;
+}
+#ca{
+    margin-left: 150px;
+}
+#tc{
+    margin-left: 150px;
+}
+.part13{
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 150px 300px;
+    font-size: medium;
+    border-radius: 4px;
+}
+#submit{
+    padding: 5px 10px;
+    margin: 10px 10px;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+}

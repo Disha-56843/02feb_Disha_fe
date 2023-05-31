@@ -1,0 +1,10 @@
+ol li dl dt{
+    font-weight: bold;
+}
+video{
+    height: 500px;
+    width: 500px;
+}
+.syntax{
+    border: 4px double;
+}

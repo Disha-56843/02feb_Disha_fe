@@ -1,0 +1,7 @@
+.syntax{
+    width: 50%;
+    border: 4px double;
+}
+canvas{
+    border: 2px solid;
+}

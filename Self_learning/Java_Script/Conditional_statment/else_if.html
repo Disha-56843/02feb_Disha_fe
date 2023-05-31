@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <img src="https://m.timesofindia.com/photo/96710830/96710830.jpg" alt="">
+        <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcHZd4rECsg1IwreaQU-6WcOVWi_CTIC5EYA4hX4QGHQ&usqp=CAU&ec=48600112" alt=""> -->
+        <button>click</button>
+    <script>
+        
+        let img = document.querySelector("img");
+        let btn = document.querySelector("button");
+
+        btn.addEventListener("click", () => {
+        if(img.src="https://m.timesofindia.com/photo/96710830/96710830.jpg")
+        {
+            img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt0Z4hpvdKdBorwPSXOgFtHFJdc0zoyEaVU8I40q_alg&usqp=CAU&ec=48600112"
+        }
+        else if(img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt0Z4hpvdKdBorwPSXOgFtHFJdc0zoyEaVU8I40q_alg&usqp=CAU&ec=48600112")
+        {
+            img.src=""
+        }
+        else if(img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcHZd4rECsg1IwreaQU-6WcOVWi_CTIC5EYA4hX4QGHQ&usqp=CAU&ec=48600112")
+        {
+            img.src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP2oQwpT6N3POdTjtfsLKjsRZDv4XT2GVSMSUnD4Tp_g&usqp=CAU&ec=48600112"
+        }
+        
+        else 
+        {
+            img.src="https://m.timesofindia.com/photo/96710830/96710830.jpg" 
+        }
+    })
+    img.style.height = "500px";
+    img.style.width = "500px";
+    // "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt0Z4hpvdKdBorwPSXOgFtHFJdc0zoyEaVU8I40q_alg&usqp=CAU&ec=48600112"
+        
+    // https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP2oQwpT6N3POdTjtfsLKjsRZDv4XT2GVSMSUnD4Tp_g&usqp=CAU&ec=48600112"
+
+    </script>
+</body>
+</html>

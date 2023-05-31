@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Image/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title> Registration Form </title>
+</head>
+
+<body>
+    <h3>Student Registration Form</h3>
+    <section class="main">
+        <form action="https://www.Google.com">
+
+            <div class="part1">
+                <label for="fnm">First Name:</label>
+                <input type="text" name="fnm" placeholder="Enter your first name" required pattern="{a-z, A-Z}"
+                    minlength="3" maxlength="6"><br>
+            </div> <br>
+            <div class="part2">
+
+                <label for="lnm">Last Name:</label>
+                <input type="text" name="lnm" placeholder="Enter your last name" required><br>
+            </div> <br>
+            <div class="part3">
+
+                <label for="mail">Email:</label>
+                <input type="email" name="mail" placeholder="it should contain @.." required><br>
+            </div> <br>
+            <div class="part4">
+
+                <label for="no">Mobile:</label>
+                <input type="tel" name="no" placeholder="only 10 digits are allowed" required pattern="[0-9]{10}"
+                    minlength="10"><br>
+            </div> <br>
+            <div class="part5">
+
+                <label for="gender" style="margin-right: 100px;">Gender:</label>
+                <div class="text2">
+                <input type="radio" name="gender" id="gender" required>
+                <label for="Male">Male</label>
+                <input type="radio" name="gender" id="gender" required>
+                <label for="Female">Female</label><br>
+                </div>
+            </div> <br>
+            <div class="part6">
+
+                <label for="dob">Date Of Birth:</label>
+                <input type="date" name="dob"  required><br>
+            </div> <br>
+            <div class="part7">
+
+                <label for="Address">Address:</label>
+                <textarea name="Address"  cols="10" rows="10" required></textarea><br>
+            </div> <br>
+            <div class="part8">
+
+                <label for="city">City:</label>
+                <input type="text" name="city"  required><br>
+            </div> <br>
+            <div class="part9">
+
+                <label for="pincode">Area PIN:</label>
+                <input type="tel" name="pincode"  required><br>
+            </div> <br>
+            <div class="part10">
+
+                <label for="state">State:</label>
+                <input type="text" name="state"  required><br>
+            </div> <br>
+            <div class="part11">
+
+                <label for="qualification">Qualification:</label>
+                <input list="qualification" placeholder="Select Qualification">
+                <datalist name="qualification" id="qualification" required>
+                    <option value="B.Com">B.Com</option>
+                    <option value="M.Com">M.Com</option>
+                    <option value="BCA">BCA</option>
+                    <option value="MCA">MCA</option>
+                </datalist><br>
+            </div> <br>
+            <div class="part12">
+                <label for="Specialization">Specialization:</label>
+                <section class="sp">
+                    <input type="checkbox" name="CS" id="cs" >
+                    <label for="Specialization">Computer Science</label><br>
+                    <input type="checkbox" name="IT" id="it" >
+                    <label for="Specialization">Information Technology</label><br>
+                    <input type="checkbox" name="CA" id="ca" >
+                    <label for="Specialization">Computer Architecture</label><br>
+                    <input type="checkbox" name="TC" id="tc" >
+                    <label for="Specialization">Tele Communication</label><br>
+                </section>
+            </div><br><br>
+            <div class="part13">
+
+                <label for="Password">Password:</label>
+                <input type="password" name="Password" required><br>
+            </div>
+            <div class="part14">
+                <input type="submit" id="submit" name="Registered" value="Registered">
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

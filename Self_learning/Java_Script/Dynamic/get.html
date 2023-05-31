@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input_data</title>
+</head>
+<body>
+    <div class="val1">
+        <input type="text" name="value 1" id="val1" placeholder="Enter 1st value">
+    </div>
+    <div class="val2">
+        <input type="text" name="value 2" id="val2" placeholder="Enter 2nd value">
+    </div>
+    <div class="ans">
+        <input type="text" name="answer" id="ans" placeholder="Your Answer">
+    </div>
+    <div class="add">
+        <button onclick="add()">Addition</button>
+    </div>
+
+    <script>
+        let val1 = parseInt(document.getElementById("val1").value)
+        let val2 = parseInt(document.getElementById("val2").value)
+        let ans = document.getElementById("ans")
+
+        function add()
+        {
+            ans.value = val1 + val2
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Question:2</title>
+</head>
+
+<body>
+    <h3>Q:2 How to embed audio and video in a webpage.</h3>
+    <h3>Ans.</h3>
+    <h4>There is three ways to embed audio and video in a webpage.</h4>
+    <ol>
+        <li>
+
+            <dl>
+                <dt>Embed Audio:</dt>
+                <dd>Audio tag is use to embed any audio in a webpage. <br>
+                    There is three audio formats - MP3, WAV, OGG. Only Safari browser doesn't support OGG audio format.
+                </dd><br>
+                <dd>Here, <br><br>controls - audio control such as play, pause, and stop. <br> autoplay - play audio as
+                    soon as possible. <br> muted - When the page is loaded audio will be automatically muted. <br> loop
+                    - It will start the audio again when it is finished. </dd>
+            </dl>
+            <section class="ex1">
+
+                <strong>Example:</strong> <br><br>
+                <audio controls>
+                    <source src="./Media/Baarishein(PaglaSongs).mp3" type="audio/mp3">
+                </audio>
+            </section>
+            <section class="syntax">
+
+                <h4>Syntax:</h4>
+                &lt;audio src="" type=""&gt;&lt;/audio&gt; <br><br>
+                <strong>OR</strong><br><br>
+                &lt;audio controls muted autoplay loop&gt; <br>
+                &emsp;&emsp;&lt;source src="" type="" &gt;<br>
+                &lt;/audio&gt;<br>
+
+                <section class="note">
+                    <h2>Note:</h2>
+                    <h3>Above syntax is use when you have any downloaded audio or video. If you don't have any
+                        downloaded audio or video than you can below syntax.</h3>
+                </section>
+
+                &lt;embed src="" type=""&gt; <br><br>
+                <strong>OR</strong><br><br>
+                Using iframe
+            </section>
+        </li>
+        <li>
+            <dl>
+                <dt>Embed Video:</dt>
+                <dd>Video tag is use to embed any video in a webpage. <br>
+                    There is three video formats - MP3, WAV, OGG. Only Safari browser doesn't support OGG video format.
+                </dd> <br>
+                <dd>Here,<br><br>controls - video control such as play, pause, and stop. <br> autoplay - play video as
+                    soon as possible. <br> muted - When the page is loaded video will be automatically muted. <br> loop
+                    - It will start the video again when it is finished. <br> poster - an image will be shown until
+                    video play. </dd>
+            </dl>
+            <section class="ex1">
+
+                <strong>Example:</strong><br><br>
+                <video controls>
+                    <source src="./media/Barsaayi-Hai-Rabb-Ne-Song-Status-Video.mp4">
+                </video>
+            </section>
+            <section class="syntax">
+                <h4>Syntax:</h4>
+                &lt;video src="" type=""&gt;&lt;/video&gt; <br><br>
+                <strong>OR</strong><br><br>
+                &lt;video controls muted autoplay loop&gt; <br>
+                &emsp;&emsp;&lt;source src="" type="" &gt;<br>
+                &lt;/video&gt;<br>
+
+                <section class="note">
+                    <h2>Note:</h2>
+                    <h3>Above syntax is use when you have any downloaded audio or video. If you don't have any
+                        downloaded
+                        audio or video than you can below syntax.</h3>
+                </section>
+
+                &lt;embed src="" type=""&gt;; <br><br>
+                <strong>OR</strong><br><br>
+                Using iframe
+            </section>
+        </li>
+    </ol>
+</body>
+
+</html>

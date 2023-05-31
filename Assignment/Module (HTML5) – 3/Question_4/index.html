@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Question:4</title>
+</head>
+
+<body>
+    <h3>Q:4 Canvas and SVG tags </h3>
+    <dl>
+        <dt>1. Canvas:</dt><br>
+        <dd>Canvas element is use to make graphics in webpage. <br> We have to use javascript for making graphics in
+            canvas element. <br> <br> You put a &lt;canvas&gt; element in HTML, then do the drawing in JavaScript.</dd>
+        <br>
+        <dd>
+            <section class="syntax">
+                <strong>HTML Syntax:</strong><br><br>
+                &lt;canvas id="value" width="value" height="value"&gt;&lt;/canvas&gt;<br><br>
+                <strong>javascript Syntax:</strong><br><br>
+                &lt;script&gt;<br>
+                &emsp;&emsp;var variable_name = document.getElementById('Id_name');<br>
+                &emsp;&emsp;var context = canvas.getContext('2d');<br><br>
+
+                <!-- For Line  -->
+                &emsp;&emsp;variable_name.moveTo(x,y); <br>
+                &emsp;&emsp;variable_name.lineTo(x_value,y_value); <br>
+                &emsp;&emsp;variable_name.stroke(); <br><br> <!-- compusory -->
+
+                <!-- For Circle  -->
+                &emsp;&emsp;var radius = value;<br>
+                &emsp;&emsp;var centerX = canvas.width / 2; <br>
+                &emsp;&emsp;var centerY = canvas.height / 2; <br>
+                &emsp;&emsp;context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);<br>
+                &emsp;&emsp;context.fillStyle = 'color_value';<br>
+                &emsp;&emsp;context.fill();<br><br>
+
+                <!-- For Text -->
+                &emsp;&emsp;variable_name.font = "value"; <br>
+                &emsp;&emsp;variable_name.fillText(text,x,y);<br>
+                &emsp;&emsp;variable_name.strokeText(text,x,y);<br><br>
+
+                &lt;/script&gt;<br>
+
+                here, <br><br>
+                &emsp;&emsp;height = height of canvas element. <br>
+                &emsp;&emsp;width = width of canvas element. <br>
+                &emsp;&emsp;getElementById() = To get Id from HTML <br>
+                &emsp;&emsp;getContext() = it's built-in HTML function. <br>
+                &emsp;&emsp;moveTo() = starting point of x-axis and y-axis. <br>
+                &emsp;&emsp;lineTo() = ending point of x-axis and y-axis <br>
+                &emsp;&emsp;stroke() = for drawing a line <br>
+                &emsp;&emsp;radius = radius of circle <br>
+                &emsp;&emsp;context.arc() = center of circle from x-axis and y-axis , radius<br>
+                &emsp;&emsp;font = property for text. <br>
+                &emsp;&emsp;strokeText() = text line <br>
+                &emsp;&emsp;fillText() = filled text. <br><br>
+
+            </section><br>
+
+            <section class="ex1">
+                <strong>Example:</strong><br><br>
+                Circle: <br><br>
+                <canvas id="circle" height="150" width="150"></canvas> <br><br>
+                Line: <br><br>
+                <canvas id="line" height="150" width="150"></canvas> <br><br>
+                Text: <br><br>
+                <canvas id="text1" height="150" width="150"></canvas> <br>
+
+            </section>
+        </dd>
+        <br><br>
+        <dt>2. SVG:</dt><br>
+        <dd>SVG stands for Scalable Vector Graphics. <br> We can zoom SVG Image without loosing their quality because
+            SVG use dynamic pixels. <br> We do not need javascript to SVG.</dd><br><br>
+        <dd>
+            <section class="syntax">
+                <strong>Syntax:</strong><br>
+                &lt;svg width="value" height="value"&gt;<br>
+                <!-- For circle -->
+                &emsp; &emsp; &lt;circle cx="value" cy="value" r="value"
+                stroke="value"stroke-<br> &emsp; &emsp;width="value"fill="value"&gt;<br>
+                <!-- For rectangle -->
+                &emsp; &emsp; &lt;rect x="value" y="value" height="value" width="value" <br>
+                &emsp; &emsp; rx="value" ry="value" stroke="value" stroke-width="value" fill="value"&gt;<br>
+                &lt;/svg&gt; <br><br>
+
+                here, <br><br>
+
+                &emsp;&emsp;height = height of svg element. <br>
+                &emsp;&emsp;width = width of svg element. <br>
+                &emsp;&emsp;&lt;circle&gt; = give shape of circle to SVG. <br>
+                &emsp;&emsp;cx = center of the circle on the x-axis. <br>
+                &emsp;&emsp;cy = center of the circle on the y-axis. <br>
+                &emsp;&emsp;x = rectangle point in SVG element in x-axis. <br>
+                &emsp;&emsp;y = rectangle point in SVG element in y-axis. <br>
+                &emsp;&emsp;r = radius of the circle. <br>
+                &emsp;&emsp;stroke = border. <br>
+                &emsp;&emsp;strokr-width : width of the stroke. <br>
+                &emsp;&emsp;fill : fill color inside the circle. <br>
+            </section> <br>
+            <section class="ex1">
+                <strong>Example:</strong><br><br>
+                Circle: <br><br>
+                <svg height="200" width="200" style="border: 2px solid black">
+                    <circle cx="100" cy="100" r="60" stroke="black" stroke-width="2" fill="blue">
+                </svg><br><br>
+                Rectangle: <br><br>
+                <svg height="200" width="200" style="border: 2px solid black">
+                    <rect x="50" y="50" height="100px" width="100px" stroke="black" stroke-width="2px" fill="cadetblue">
+                </svg> <br><br>
+
+            </section>
+        </dd>
+    </dl>
+    <script>
+        // For circle canvas 
+        var canvas = document.getElementById('circle');
+        var context = canvas.getContext('2d');
+        var centerX = canvas.width / 2;
+        var centerY = canvas.height / 2;
+
+        context.arc(centerX, centerY, 40, 0, 2 * 3.14);
+        context.fillStyle = 'blue';
+        context.fill();
+        context.stroke();
+
+        // For line canvas
+        var canvas = document.getElementById('line');
+        var context = canvas.getContext('2d');
+        context.moveTo(0, 0);
+        context.lineTo(100, 100);
+        context.stroke();
+
+        // For text canvas
+        var canvas = document.getElementById('text1');
+        var context = canvas.getContext('2d');
+        context.font = "40px arial";
+        context.strokeText("Hello", 30, 90);
+    </script>
+</body>
+
+</html>
