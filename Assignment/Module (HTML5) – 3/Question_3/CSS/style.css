@@ -5,13 +5,40 @@
     font-family: 'Open Sans', sans-serif;
 
 }
-h3{
-    font-size: 35px;
+.home{
+    height: 1px;
 }
+.home .menu{
+    text-align: left;
+    line-height: 1;
+}
+.home .menu ul li{
+    list-style: none;
+    display: inline;
+}
+.home .menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid #835608;
+    color: black;
+    padding: 5px 10px;
+}
+.home .menu a:hover{
+    background-color: #835608;
+    color: white;
+}
+h3{
+    color: #835608;
+    text-align: center;
+    line-height: 1;
+    font-size: 30px;
+    height: 50px;
+}
+
 dt strong{
     font-size: 30px;
 }
-header{
+.ex1 header{
     top: 0;
     height: 70px;
     width: 100%;
@@ -36,9 +63,7 @@ header .logo img{
 }
 header .menu{
     height: 70px;
-    /* width: 55%; */
     text-align: end;
-    /* float: left; */
     margin: 30px ;
 }
 header .menu ul li{
@@ -86,7 +111,7 @@ aside{
     display: flex ;
     flex-wrap: wrap;
 }
-footer{
+.ex1 footer{
     background-color: #7f7770;
     height: 350px;
     width: 100%;
@@ -95,7 +120,6 @@ footer{
     grid-template-columns: 40% 20% 20%;
     justify-content: center;
     justify-items: center;
-    /* align-content: center; */
     align-items: center;
 
     color: #fff;
@@ -118,9 +142,7 @@ footer .part1{
     display: grid;
     grid-template-rows: 50px 90px 70px;
     grid-template-columns: 500px;
-    /* justify-content: center; */
     justify-items: center;
-    /* align-content: center; */
     align-items: center;
 }
 footer .part1 .text1{
@@ -144,9 +166,7 @@ footer .part2{
     display: grid;
     grid-template-rows: 50px 90px 70px;
     grid-template-columns: 250px;
-    /* justify-content: center; */
     justify-items: center;
-    /* align-content: center; */
     align-items: center;
 }
 footer .part2 .text1{
@@ -159,12 +179,35 @@ footer .part3{
     display: grid;
     grid-template-rows: 50px 90px 70px;
     grid-template-columns: 200px;
-    /* justify-content: center; */
     justify-items: center;
-    /* align-content: center; */
     align-items: center;
 }
 footer .part3 .text1{
     height: 40px;
     font-size: 25px;
+}
+.footer{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+}
+.footer ul li{
+    list-style: none;
+    display: inline;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    line-height: 1.9;
+    padding: 0px 15px;
+    top: 30px;
+    
+    position: absolute;
+    border: 2px solid #835608;
+}
+.footer a:hover{
+    background-color: rgb(131, 86, 8);
+    color: white;
 }

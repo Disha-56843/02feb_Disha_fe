@@ -13,10 +13,18 @@
 </head>
 
 <body>
-    <h3>Q:1 What are the new tags added in HTML5?</h3> <br>
-    <h4>New tags of HTML5:</h4> <br><br>
-    <main>
+    <header class="home">
+    <div class="menu">
+        <ul>
+            <li><a href="../Assignment/index.html" target="_blank">HOME</a></li>
+        </ul>
+    </div>
+</header>
+    <h3>Q:1 What are the new tags added in HTML5?</h3><hr><hr><hr> <br>
 
+    <h3>New tags of HTML5:</h3> <br><br>
+    <main>
+        <!-- List of tags -->
         <ul class="tag">
             <section class="struct">
                 <h4>Structure/Symentic Tag</h4> <br>
@@ -46,7 +54,9 @@
         </ul> <br><br>
 
     </main>
+    <hr>
     <article>
+        <!-- Structure tags. -->
         <section class="symentic">
             <dl>
                 <dt><strong>1.Header</strong></dt> <br>
@@ -214,10 +224,12 @@
 
             </dl><br><br>
         </section>
+        <hr>
+        <!-- Content tags. -->
         <section class="content">
             <ol>
+                <!-- Media tags start -->
                 <li>
-
                     <dl>
                         <dt><strong>1.Audio:</strong></dt><br>
                         <dd>Audio tag is use to embed any audio in a webpage. <br>
@@ -256,9 +268,10 @@
                             will be shown until video play. </dd>
                     </dl><br>
                     <strong>For Example:</strong><br><br>
-                    <video controls>
-                        <source src="./Image/Media/Barsaayi-Hai-Rabb-Ne-Song-Status-Video.mp4">
+                    <video controls poster="./Image/Media/poster.jpg" style="height: 250px; width: 250px;">
+                        <source src="./Image/Media/Barsaayi-Hai-Rabb-Ne-Song-Status-Video.mp4"  >
                     </video><br>
+                    <section class="syntax">
 
                     <h4>Syntax:</h4><br>
                     &lt;video src="" type=""&gt;&lt;/video&gt; <br><br>
@@ -267,101 +280,270 @@
                     &emsp;&emsp;&lt;source src="" type="" &gt;<br>
                     &lt;/video&gt;<br>
 
-
+</section>
                 </li><br>
                 <li>
                     <dl>
                         <dt><strong>3.Embed:</strong></dt><br>
                         <dd>Embed tag is use to embed any video or audio in a webpage. <br>
-                            </dd> <br>
+                        </dd> <br>
                         <dd>Here,<br><br>controls - video control such as play, pause, and stop. <br> autoplay - play
                             video as soon as possible. <br> muted - When the page is loaded video will be automatically
                             muted. <br> loop - It will start the video again when it is finished. <br> poster - an image
                             will be shown until video play. </dd>
                     </dl><br>
                     <strong>For Example:</strong><br><br>
-                    
+
                     <embed src="https://www.youtube.com/embed/Y9pgsPW-KIE" type=""><br><br>
+                        <section class="syntax">
 
                     <h4>Syntax:</h4><br>
                     &lt;embed src="" type=""&gt;&lt;/video&gt; <br><br>
                     <strong>OR</strong><br><br>
                     Using Iframe<br><br>
-
+</section>
                 </li>
+                <!-- Media tags end. -->
+                <hr>
                 <li>
                     <dl>
                         <dt><strong>4. Ruby:</strong></dt><br>
-                        <dd></dd><br>
-                        
+                        <dd>The &lt;ruby&gt; tag in HTML is used to specifysmall text, attached with the main text.
+                        </dd><br>
+
                     </dl><br>
+                    <section class="ex1">
+
                     <strong>For Example:</strong><br><br>
-                    
+
                     <Ruby>
                         Tops
                         <rt>Tops Technology</rt>
                     </Ruby><br><br>
+</section>
+<section class="syntax">
 
                     <h4>Syntax:</h4><br>
                     &lt;ruby&gt;"value"&lt;rt&gt;"value&lt;/rt&gt;&lt;/ruby&gt;<br><br>
-                    
 
+</section>
                 </li>
                 <li>
                     <dl>
                         <dt><strong>5. Progress:</strong></dt><br>
                         <dd>Progress tag is used to know about progress of Task.</dd><br>
                     </dl><br>
+                    <section class="ex1">
 
                     <strong>For Example:</strong><br><br>
 
                     HTML:&nbsp;<progress value="5" max="10"></progress><br><br>
+</section>
+<section class="syntax">
 
                     <h4>Syntax:</h4><br>
                     "value":&lt;progress value="value" max="value"&gt;&lt;/progress&gt;
+                    </section>
                 </li> <br>
                 <li>
                     <dl>
                         <dt><strong>6. Meter:</strong></dt><br>
                         <dd>Meter tag is used to specifices a measurement.</dd><br>
                     </dl><br>
+                    <section class="ex1">
 
                     <strong>For Example:</strong><br><br>
 
                     HTML:&nbsp;<meter value="5" max="10"></meter><br><br>
+</section>
+<section class="syntax">
 
                     <h4>Syntax:</h4><br>
                     "value":&lt;meter value="value" max="value"&gt;&lt;/meter&gt;
-                </li>
+                    </section>
+                </li><br>
                 <li>
                     <dl>
                         <dt><strong>7. Figure:</strong></dt><br>
-                        <dd></dd><br>
+                        <dd>The &lt;figure&gt; tag specifies self-contained content. figure element is a single unit
+                            from main flow of document. </dd><br>
                     </dl><br>
+                    <section class="ex1">
 
                     <strong>For Example:</strong><br><br>
 
-                    <br><br>
+                    <figure>
+                        <figcaption>This is figure caption tag tag</figcaption>
+                        This is figure tag.
+                    </figure> <br><br>
+</section>
+<section class="syntax">
 
                     <h4>Syntax:</h4><br>
-                    "value":&lt;meter value="value" max="value"&gt;&lt;/meter&gt;
-                </li>
+                    &lt;figure&gt;
+                    &lt;figcaption&gt;
+                    Caption here...
+                    &lt;/figcaption&gt;
+
+                    Figure content here...
+                    &lt;figure&gt;
+                    </section>
+                </li><br>
                 <li>
                     <dl>
                         <dt><strong>8. Hgroup:</strong></dt><br>
-                        <dd>Meter tag is used to specifices a measurement.</dd><br>
+                        <dd>&lt;hgroup&gt; tag is used to group the &lt;h1&gt; to &lt;h6&gt; headings .</dd><br>
                     </dl><br>
+                    <section class="ex1">
 
                     <strong>For Example:</strong><br><br>
 
-                    HTML:&nbsp;<meter value="5" max="10"></meter><br><br>
+                    <hgroup>
+                        <h4>Hello</h4>
+                        <h5>This is heading tag.</h5>
+                    </hgroup><br>
+</section>
+<section class="syntax">
 
                     <h4>Syntax:</h4><br>
-                    "value":&lt;meter value="value" max="value"&gt;&lt;/meter&gt;
-                </li>
+                    &lt;hgroup&gt;<br>
+                    &emsp;&emsp;&lt;h1&gt;&lt;/h1&gt;<br>
+                    &emsp;&emsp;&lt;h2&gt;&lt;/h2&gt;<br>
+                    &emsp;&emsp;&lt;h3&gt;&lt;/h3&gt;<br>
+                    &emsp;&emsp;&lt;h4&gt;&lt;/h4&gt;<br>
+                    &emsp;&emsp;&lt;h5&gt;&lt;/h5&gt;<br>
+                    &emsp;&emsp;&lt;h6&gt;&lt;/h6&gt;<br>
+
+                    &lt;/hgroup&gt; <br>
+</section>
+                </li><br>
+                <li>
+                    <dl>
+                        <dt><strong>9. Source:</strong></dt><br>
+                        <dd> It is a void element, meaning that it has no content and does not have a closing tag. It is used to offer the same media content in multiple file formats.</dd><br>
+                    </dl>
+                    <section class="syntax">
+
+                    <h4>Syntax:</h4><br>
+                    &lt;source src="link_value"&gt;
+                    </section>
+                </li><br>
+                <li>
+                    <dl>
+                        <dt><strong>10. Datalist:</strong></dt><br>
+                        <dd>Datalist tag is used to give option to user using option tag.</dd><br>
+                    </dl><br>
+                    <section class="ex1">
+
+                    <strong>For Example:</strong><br><br>
+                    qualification:
+                    <input list="qualification" placeholder="Select Qualification">
+                    <datalist name="qualification" id="qualification" required>
+                        <option value="B.Com">B.Com</option>
+                        <option value="M.Com">M.Com</option>
+                        <option value="BCA">BCA</option>
+                        <option value="MCA">MCA</option>
+                    </datalist>
+                    <br><br>
+</section>
+<section class="syntax">
+
+                    <h4>Syntax:</h4><br>
+                    "value":&lt;input list="value" &gt; <br>
+                    &lt;datalist id="list_value"&gt; <br>
+                    &emsp;&emsp;&lt;option&gt;"value"&lt;/option&gt;<br>
+                    &lt;datalist&gt; <br>
+                    </section>
+                </li><br>
+                <li>
+                    <dl>
+                        <dt><strong>11. Mark:</strong></dt><br>
+                        <dd>The &lt;mark&gt; tag defines text that should be marked or highlighted.</dd><br>
+                    </dl><br>
+                    <section class="ex1">
+
+                    <strong>For Example:</strong><br><br>
+                    
+                    <mark>This is mark tag.</mark>
+</section>
+                    <br><br>
+                    <section class="syntax">
+
+                    <h4>Syntax:</h4><br>
+                    &lt;mark&gt;"Value"&lt;/mark&gt;<br>
+                    </section>
+                </li><br>
+                <li>
+                    <dl>
+                        <dt><strong>12. Section:</strong></dt><br>
+                        <dd>The &lt;section&gt; tag defines a section in a document. We can also use section tag as a alternate of div tag.</dd><br>
+                    </dl>              
+                    <section class="syntax">
+
+                    <h4>Syntax:</h4><br>
+                    &lt;section&gt;"value"&lt;/section&gt;
+                    </section>
+                    <br>
+                </li><br>
+                <li>
+                    <dl>
+                        <dt><strong>13. SVG:</strong></dt><br>
+                        <dd>SVG stands for Scalable Vector Graphics. <br> We can zoom SVG Image without loosing their quality because
+                            SVG use dynamic pixels. <br> We do not need javascript to SVG.</dd><br>
+                    </dl><br>
+                    <section class="ex1">
+
+                    <strong>For Example:</strong><br><br>
+                    
+                    <svg height="200" width="200" style="border: 2px solid black">
+                        <circle cx="100" cy="100" r="60" stroke="black" stroke-width="2" fill="blue">
+                    </svg><br><br>
+</section>
+<section class="syntax">
+
+                    <h4>Syntax:</h4><br>
+                    &lt;svg width="value" height="value"&gt;<br>&emsp; &emsp; &lt;circle cx="value" cy="value" r="value"
+                    stroke="value"stroke-<br> &emsp; &emsp;width="value"fill="value"&gt;<br>
+                    </section>
+                </li><br>
+                <li>
+                    <dl>
+                        <dt><strong>14. Canvas:</strong></dt><br>
+                        <dd>Canvas element is use to make graphics in webpage. <br> We have to use javascript for making graphics in
+                            canvas element. <br> <br> You put a &lt;canvas&gt; element in HTML, then do the drawing in JavaScript.</dd><br>
+                    </dl><br>
+                    <section class="ex1">
+                    <strong>For Example:</strong><br><br>
+                    <canvas id="line" height="150" width="150" ></canvas> 
+                </section>
+                    <br><br>
+                    <section class="syntax">
+                    
+                    <h4>Syntax:</h4><br>
+
+                    &emsp;&emsp;variable_name.moveTo(x,y); <br>
+                    &emsp;&emsp;variable_name.lineTo(x_value,y_value); <br>
+                    &emsp;&emsp;variable_name.stroke();<br>
+</section>
+                </li><br>
             </ol>
         </section>
     </article>
+    <footer class="next">
+        <div class="footer">
+            <ul>
+                <li style="margin-left: 1150px;"><a href="../Question_2/index.html" target="_blank">NEXT</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        // For Canvas element example
+        var canvas = document.getElementById('line');
+        var context = canvas.getContext('2d');
+        context.moveTo(0, 0);
+        context.lineTo(100, 100);
+        context.stroke();
+    </script>
 </body>
 
 </html>

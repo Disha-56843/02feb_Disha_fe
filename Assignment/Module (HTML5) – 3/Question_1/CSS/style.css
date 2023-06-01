@@ -5,11 +5,38 @@
     font-family: 'Open Sans', sans-serif;
 
 }
+.home .menu{
+    
+    line-height: 1.5;
+}
+.home .menu ul li{
+    list-style: none;
+    display: inline;
+}
+.home .menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid #835608;
+    color: black;
+    padding: 5px 10px;
+}
+.home .menu a:hover{
+    background-color: #835608;
+    color: white;
+}
+h3{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 30px;
+    height: 50px;
+    color: #835608;
+}
 .tag{
     display: flex;
     justify-content: space-around;
 }
 dt strong{
+    text-decoration: underline;
     font-size: 20px;
 }
 .symentic header{
@@ -21,14 +48,12 @@ dt strong{
     grid-template-columns: 15% 60% 20% ;
     background-color: cadetblue;
 }
-.symentic .syntax, .ex1{
+.syntax, .ex1{
     border:  5px double;
     margin: 15px;
 }
 .symentic header .logo{
     height: 70px;
-    /* width: 20%; */
-    /* float: left; */
 }
 .symentic header .logo img{
     margin: 14px 35px;
@@ -37,9 +62,7 @@ dt strong{
 }
 .symentic header .menu{
     height: 70px;
-    /* width: 55%; */
     text-align: end;
-    /* float: left; */
     margin: 30px ;
 }
 .symentic header .menu ul li{
@@ -96,7 +119,6 @@ dt strong{
     grid-template-columns: 40% 20% 20%;
     justify-content: center;
     justify-items: center;
-    /* align-content: center; */
     align-items: center;
 
     color: #fff;
@@ -119,9 +141,7 @@ dt strong{
     display: grid;
     grid-template-rows: 50px 90px 70px;
     grid-template-columns: 500px;
-    /* justify-content: center; */
     justify-items: center;
-    /* align-content: center; */
     align-items: center;
 }
 .symentic footer .part1 .text1{
@@ -145,9 +165,7 @@ dt strong{
     display: grid;
     grid-template-rows: 50px 90px 70px;
     grid-template-columns: 250px;
-    /* justify-content: center; */
     justify-items: center;
-    /* align-content: center; */
     align-items: center;
 }
 .symentic footer .part2 .text1{
@@ -160,12 +178,38 @@ dt strong{
     display: grid;
     grid-template-rows: 50px 90px 70px;
     grid-template-columns: 200px;
-    /* justify-content: center; */
     justify-items: center;
-    /* align-content: center; */
     align-items: center;
 }
 .symentic footer .part3 .text1{
     height: 40px;
     font-size: 25px;
+}
+canvas{
+    border: 2px solid;
+}
+.footer{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+}
+.footer ul li{
+    list-style: none;
+    display: inline;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    line-height: 1.9;
+    padding: 0px 15px;
+    top: 30px;
+    right: 650px;
+    position: absolute;
+    border: 2px solid #835608;
+}
+.footer a:hover{
+    background-color: #835608;
+    color: white;
 }
